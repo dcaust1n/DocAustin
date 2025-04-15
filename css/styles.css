@@ -10,7 +10,7 @@
     background-color: #f4f4f4; /* Fallback background color */
     font-family: Arial, sans-serif;
     color: #0e0e52; /* Navy Blue */
-    background-image: url('/images/background_harvestmoon.png'); /* Path to your image */
+    background-image: url('../images/background_harvestmoon.png'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
