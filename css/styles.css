@@ -158,12 +158,12 @@
   }
   
   /* Speaker Page Styles */
-  .presentations ul {
+  .presentations ul, .accolades ul {
     list-style: none;
     padding: 0;
   }
   
-  .presentations li {
+  .presentations li, .accolades li {
     background-color: #fff;
     padding: 10px;
     margin-bottom: 10px;

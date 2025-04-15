@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - DocAustin</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="/pages/login.html" title="Go to Login Page">
-        <img src="/images/logo_harvestmoon.png" alt="DocAustin Logo">
+      <a href="../pages/login.html" title="Go to Login Page">
+        <img src="../images/logo_harvestmoon.png" alt="DocAustin Logo">
       </a>
     </div>
     <nav id="nav-menu">
       <ul>
         <li><a id="home-link" href="../index.html">Home</a></li>
-        <li><a id="bookstore-link" href="/pages/bookstore.html">Book Store</a></li>
-        <li><a id="writer-link" href="/pages/writer.html">Writer</a></li>
-        <li><a id="speaker-link" href="/pages/speaker.html">Speaker</a></li>
-        <li><a id="events-link" href="/pages/events.html">Upcoming Events</a></li>
-        <li><a id="contact-link" href="/pages/contact.html">Contact</a></li>
+        <li><a id="bookstore-link" href="../pages/bookstore.html">Book Store</a></li>
+        <li><a id="writer-link" href="../pages/writer.html">Writer</a></li>
+        <li><a id="speaker-link" href="../pages/speaker.html">Speaker</a></li>
+        <li><a id="events-link" href="../pages/events.html">Upcoming Events</a></li>
+        <li><a id="contact-link" href="../pages/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -41,6 +41,7 @@
   </main>
 
   <footer>
+    <p>Represented by <a href="https://www.mckinnonliterary.com/" target="_blank">MCKINNON LITERARY</a></p>
     <p>&copy; 2023 DocAustin.com. All rights reserved.</p>
   </footer>
 
@@ -66,7 +67,7 @@
       if (response.ok) {
         // Save the token in localStorage or sessionStorage
         localStorage.setItem('token', data.token);
-        window.location.href = '/pages/writer.html'; // Redirect to the writer page
+        window.location.href = '../pages/writer.html'; // Redirect to the writer page
       } else {
         document.getElementById('login-message').textContent = data.message || 'Login failed';
       }
