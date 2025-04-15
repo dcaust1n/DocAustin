@@ -1,0 +1,385 @@
+  /* General Styles */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Fallback background color */
+    font-family: Arial, sans-serif;
+    color: #0e0e52; /* Navy Blue */
+    background-image: url('/images/background_harvestmoon.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+
+  }
+  
+  
+  /* Header Styles */
+  header {
+    width: 100%;
+    background-color: #0e0e52; /* Navy Blue */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix header at the top */
+    top: 0;
+    left: 0;
+
+    z-index: 1000; /* Ensure header is above other content */
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #FF69B4; /* Hot Pink */
+  }
+  
+  #nav-menu ul li a.active {
+    font-weight: bold;
+    color: #FF69B4; /* Hot Pink */ 
+  } 
+
+  .logo a {
+    text-decoration: none;
+    cursor: pointer; 
+  }
+
+  /* Main Content Styles */
+  main {
+    width: auto;
+    max-width: 1200px; /* Limit content width for better readability */
+    padding: 20px; /* Add padding to account for fixed header */
+    text-align: center; /* Center text within main */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 100px auto; /* Add space at the top and center horizontally */
+  }
+
+  #contact-main {
+    width: 100%;
+    padding: 50px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Footer Styles */
+  footer {
+    width: 100%;
+    background-color: #0e0e52; /* Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fix footer at the bottom */
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensure footer is above other content */
+  }
+  
+  .intro, .newsletter, .social-media {
+    margin-bottom: 40px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  .newsletter input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background-color: #FF69B4; /* Hot Pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e64d9a;
+  }
+  
+  .social-media .social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .social-media .social-links a {
+    color: #0e0e52; /* Navy Blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-media .social-links a:hover {
+    color: #FF69B4; /* Hot Pink */
+  }
+  
+  /* Speaker Page Styles */
+  .presentations ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .presentations li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .videos .video-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Upcoming Events Page Styles */
+  .calendar iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+  
+  .camera-roll .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .camera-roll .gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Contact Page Styles */
+  .writer-request, .speaker-request {
+    margin-bottom: 40px;
+  }
+  
+  .writer-request form, .speaker-request form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+  
+  .writer-request input, .speaker-request input,
+  .writer-request textarea, .speaker-request textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .writer-request button, .speaker-request button {
+    padding: 10px;
+    background-color: #FF69B4; /* Hot Pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .writer-request button:hover, .speaker-request button:hover {
+    background-color: #e64d9a;
+  }
+
+  /* Book Store Page Styles */
+.book-list {
+    display: flex;
+    gap: 20px; /* Space between books */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px; /* Fixed width for each book */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book img {
+    width: 150px; /* Fixed width for images */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px;
+  }
+  
+  .book h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .book p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .book button {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* Hot Pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .book button:hover {
+    background-color: #e64d9a;
+  }
+
+  @media (max-width: 600px) {
+    .book-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Writer Page Styles */
+  .writer main {
+    max-width: 800px; /* Limit content width for better readability */
+    margin: 0 auto; /* Center the content */
+    padding: 80px 20px 20px; /* Add padding to account for fixed header */
+    text-align: left; /* Align text to the left for articles */
+  }
+  
+  .writer .bio {
+    margin-bottom: 40px;
+  }
+  
+  .writer .article {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .writer .article h2 {
+    color: #0e0e52; /* Navy Blue */
+    margin-bottom: 20px;
+  }
+  
+  .writer .article h3 {
+    color: #FF69B4; /* Hot Pink */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .writer .article p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+  }
+  
+  .writer .article p:last-child {
+    margin-bottom: 0; /* Remove margin for the last paragraph */
+  }
+
+  /* Newsletter Feed Styles */
+  .newsletter-feed {
+    margin-bottom: 40px;
+  }
+  
+  .newsletter-feed .feed-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-feed .feed-item h3 {
+    color: #0e0e52; /* Navy Blue */
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-feed .feed-item p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+  }
+  
+  .newsletter-feed .feed-item .read-more {
+    color: #FF69B4; /* Hot Pink */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .newsletter-feed .feed-item .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Full Articles Styles */
+  .articles .article {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px;
+  }
+  
+  .articles .article h2 {
+    color: #0e0e52; /* Navy Blue */
+    margin-bottom: 20px;
+  }
+  
+  .articles .article h3 {
+    color: #FF69B4; /* Hot Pink */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .articles .article p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+  }
+  
+  .articles .article p:last-child {
+    margin-bottom: 0; /* Remove margin for the last paragraph */
+  }
